@@ -1,0 +1,9 @@
+[Unit]
+Description=Restart wireguard when config changes
+
+[Service]
+ExecStart=/home/MY_USER/.bin/wg-daemon.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target 
