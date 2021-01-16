@@ -1,0 +1,16 @@
+## List disks
+alias ldisks="diskutil list"
+
+# IP addresses
+alias localip="ipconfig getifaddr en0"
+## Should overwrite the ones from .aliases/netowrk
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Alias
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
+alias relaunch="killall Finder"
+alias brewfolder="cd /usr/local/Cellar/"
+alias cloudfolder="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"

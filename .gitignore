@@ -1,0 +1,6 @@
+node_modules
+.DS_*
+Thumb*
+## my_secrets is where I put secret aliases or tokens etc. This is basically code I do not want to get up in github
+**/my_secrets
+

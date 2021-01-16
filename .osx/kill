@@ -1,0 +1,3 @@
+## Force kill crapservices that Apples forces me to have
+launchctl disable gui/$UID/com.apple.photoanalysisd 2> /dev/null
+launchctl kill -TERM gui/$UID/com.apple.photoanalysisd 2> /dev/null
