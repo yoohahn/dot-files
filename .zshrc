@@ -1,5 +1,7 @@
 #Make sure I only have read and write on created files
 umask 022
+export PATH=$HOME/.bin:/usr/local/sbin:$PATH:$HOME/.cargo/bin:$HOME/git/flutter/bin
+export DOTNET_CLI_TELEMETRY_OPTOUT="1"
 
 ## Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -11,7 +13,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 ## ZSH
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="amuse"
+ZSH_THEME="bira"
 plugins=(
   git
   zsh-syntax-highlighting
